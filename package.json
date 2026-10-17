@@ -1,0 +1,9 @@
+{
+  "name": "ordo-tech-site",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Сайт ORDO TECH — статика, без сборки",
+  "scripts": {
+    "dev": "python3 -m http.server 3000"
+  }
+}

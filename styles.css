@@ -1,0 +1,114 @@
+/* ORDO TECH — шрифты, токены и глобальные стили */
+
+@font-face{
+  font-family:'Unbounded';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('./unbounded-cyrillic.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face{
+  font-family:'Unbounded';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('./unbounded-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'Onest';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('./onest-cyrillic.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face{
+  font-family:'Onest';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('./onest-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:'JetBrains Mono';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('./jetbrains-mono-cyrillic.woff2') format('woff2');
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+@font-face{
+  font-family:'JetBrains Mono';
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+  src:url('./jetbrains-mono-latin.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+:root{
+  /* тихая роскошь: графит + мел + шампань. Ничего кричащего. */
+  --ink:#0a0b0d;        /* фон — нейтральный графит            */
+  --surface:#101114;    /* приподнятая поверхность             */
+  --chalk:#eceae4;      /* текст — тёплый мел                  */
+  --muted:#8a8c90;      /* второстепенный текст                */
+  --champagne:#dcd2be;  /* основной акцент                     */
+  --taupe:#bbb09b;      /* тёплый переход                      */
+  --frost:#a9bbc2;      /* морозная синь — холодный контрапункт*/
+  --titanium:#c6d0d4;   /* светлый титан                       */
+  --clay:#c2a79d;       /* внимание                            */
+  --hair:rgba(236,234,228,.10);
+  --display:'Unbounded',system-ui,sans-serif;
+  --body:'Onest',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+
+body,button,input,textarea,select,p,li,span,div,a,label{font-family:var(--body);}
+h1,h2,h3,h4,h5{font-family:var(--display);letter-spacing:-.03em;line-height:1.06;}
+h1{font-weight:300;} h2{font-weight:400;} h3,h4,h5{font-weight:400;}
+[style*='ui-monospace'],[style*='monospace'],code,pre,kbd{
+  font-family:var(--mono);letter-spacing:.02em;
+}
+
+/* --- голограмма в герое --- */
+.holo-wrap{
+  position:absolute; inset:0; z-index:0;
+  pointer-events:none; overflow:hidden;
+}
+#ordo-holo{
+  position:absolute; top:50%; right:max(2vw,18px);
+  transform:translateY(-50%);
+  width:min(46vw,620px); height:min(46vw,620px);
+  opacity:.92;
+}
+.holo-cap{
+  position:absolute; bottom:clamp(10px,3vw,34px); right:max(2vw,22px);
+  font-family:var(--mono); font-size:10px; letter-spacing:.26em;
+  text-transform:uppercase; color:rgba(236,234,228,.26);
+}
+@media (max-width:1100px){
+  #ordo-holo{ width:min(62vw,460px); height:min(62vw,460px); opacity:.5; right:-8vw; }
+  .holo-cap{ display:none; }
+}
+@media (max-width:720px){
+  #ordo-holo{ opacity:.34; right:-22vw; top:40%; }
+}
+
+/* --- стили страницы --- */
+body{margin:0;background:#0a0b0d;color:#eceae4;font-family:var(--body);font-size:17px;line-height:1.45;letter-spacing:-.01em;text-wrap:pretty;-webkit-font-smoothing:antialiased}
+*,*::before,*::after{box-sizing:border-box}
+a{color:#c6d0d4;text-decoration:none}
+a:hover{color:#dcd2be}
+:focus-visible{outline:2px solid #bbb09b;outline-offset:3px}
+::selection{background:rgba(187,176,155,.35)}
+@keyframes om-marq{to{transform:translateX(-50%)}}
+@keyframes om-aurora{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(4%,-6%,0) scale(1.16)}100%{transform:translate3d(-3%,4%,0) scale(1.04)}}
+@keyframes om-shimmer{0%{transform:translateX(-120%)}100%{transform:translateX(320%)}}
+@keyframes om-glow{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes om-blink{0%,100%{opacity:.15}50%{opacity:1}}
+@keyframes om-grad{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+@keyframes om-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes om-spin{to{transform:rotate(360deg)}}
