@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ordo-tech.live/sitemap.xml
+Sitemap: https://ordotech.kg/sitemap.xml

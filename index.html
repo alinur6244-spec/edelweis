@@ -4,30 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ORDO TECH — автоматизация бизнес-процессов</title>
-<meta name="description" content="Проектируем и внедряем автоматизацию: AI-ассистенты, интеграции между системами, CRM и веб-сервисы. Бишкек · Дубай.">
-<link rel="canonical" href="https://ordo-tech.live/">
+<meta name="description" content="Проектируем и внедряем автоматизацию: AI-ассистенты, интеграции между системами, CRM и веб-сервисы. Бишкек · Дубай · Лондон.">
+<link rel="canonical" href="https://ordotech.kg/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0B0D'/%3E%3Ccircle cx='16' cy='16' r='7.5' fill='none' stroke='%23DCD2BE' stroke-width='1.6'/%3E%3Cellipse cx='16' cy='16' rx='3.2' ry='7.5' fill='none' stroke='%23A9BBC2' stroke-width='1.1'/%3E%3C/svg%3E">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ORDO TECH">
 <meta property="og:title" content="ORDO TECH — одна заявка, два пути">
-<meta property="og:description" content="Автоматизация процессов, AI-ассистенты, интеграции и веб-системы. Бишкек · Дубай.">
-<meta property="og:url" content="https://ordo-tech.live/">
-<meta property="og:image" content="https://ordo-tech.live/og.png">
+<meta property="og:description" content="Автоматизация процессов, AI-ассистенты, интеграции и веб-системы. Бишкек · Дубай · Лондон.">
+<meta property="og:url" content="https://ordotech.kg/">
+<meta property="og:image" content="https://ordotech.kg/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ru_RU">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0a0b0d">
 
-<link rel="preload" as="font" type="font/woff2" href="./unbounded-cyrillic.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="./onest-cyrillic.woff2" crossorigin>
-<link rel="stylesheet" href="./styles.css">
+<link rel="preload" as="font" type="font/woff2" href="./assets/fonts/unbounded-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="./assets/fonts/onest-cyrillic.woff2" crossorigin>
+<link rel="stylesheet" href="./assets/styles.css">
 
 <!-- React грузим сами — рантайм видит window.React и не идёт в CDN -->
-<script src="./react.production.min.js"></script>
-<script src="./react-dom.production.min.js"></script>
-<script src="./dc-runtime.js"></script>
+<script src="./vendor/react.production.min.js"></script>
+<script src="./vendor/react-dom.production.min.js"></script>
+<script src="./vendor/dc-runtime.js"></script>
 </head>
 <body>
 <x-dc>
@@ -66,15 +66,16 @@
   </div>
 
   <section style="position:relative;z-index:2;padding:clamp(48px,6vw,88px) 0 clamp(40px,5vw,72px)">
-    <div style="max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,48px)">
+  <div class="holo-wrap" aria-hidden="true"><canvas id="ordo-holo"></canvas><span class="holo-cap">ORDO&nbsp;/ контур активен</span></div>
+    <div style="position:relative;z-index:2;max-width:1440px;margin:0 auto;padding:0 clamp(20px,4vw,48px)">
       <div style="max-width:22ch">
         <div data-rv="" style="opacity:0;transform:translateY(12px);display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#dcd2be;margin-bottom:26px">
           <i style="display:block;width:6px;height:6px;border-radius:50%;background:#a9bbc2;box-shadow:0 0 12px #a9bbc2;animation:om-blink 2.2s ease-in-out infinite"></i>
-          Бишкек · Дубай
+          Бишкек · Дубай · Лондон
         </div>
         <h1 style="font-size:clamp(36px,5.6vw,76px);font-weight:600;line-height:1.05;letter-spacing:-.03em;margin:0">
-          <span style="display:block;overflow:hidden"><span data-line="" style="display:block;transform:translateY(108%)">Ваш бизнес должен</span></span>
-          <span style="display:block;overflow:hidden"><span data-line="" style="display:block;transform:translateY(108%)">работать без вас</span></span>
+          <span style="display:block;overflow:hidden"><span data-line="" style="display:block;transform:translateY(108%)">Одна заявка.</span></span>
+          <span style="display:block;overflow:hidden"><span data-line="" style="display:block;transform:translateY(108%)">Два пути.</span></span>
         </h1>
         <p data-rv="" style="opacity:0;transform:translateY(16px);font-size:clamp(17px,1.9vw,23px);font-weight:300;line-height:1.4;color:rgba(236,234,228,.68);margin:24px 0 0;max-width:44ch">Смотрите, что происходит с обращением клиента, когда его ведут руками — и когда его ведёт контур.</p>
         <div data-rv="" style="opacity:0;transform:translateY(16px);display:flex;gap:14px;flex-wrap:wrap;margin-top:30px">
@@ -350,7 +351,7 @@
       <div style="text-align:center;max-width:40ch;margin:0 auto">
         <div data-rv="" style="opacity:0;transform:translateY(12px);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#dcd2be;margin-bottom:16px">07 · Команда</div>
         <h2 style="font-size:clamp(30px,4.4vw,52px);font-weight:600;line-height:1.08;letter-spacing:-.03em;margin:0">
-          <span style="display:block;overflow:hidden"><span data-line="" style="display:block;transform:translateY(108%)">Кто с вами работает</span></span>
+          <span style="display:block;overflow:hidden"><span data-line="" style="display:block;transform:translateY(108%)">Команда в трёх городах</span></span>
         </h2>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(224px,1fr));gap:22px;margin-top:clamp(40px,5vw,64px)">
@@ -358,7 +359,7 @@
           <div data-rv="" data-spot="" style="opacity:0;transform:translateY(20px);position:relative;overflow:hidden;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);transition:border-color .4s,box-shadow .4s">
             <div style="height:180px;overflow:hidden;position:relative;border-bottom:1px solid rgba(255,255,255,.08)">
               <div data-par="0.05" style="position:absolute;left:0;right:0;top:-15%;height:130%;background:radial-gradient(circle at 40% 35%,rgba(187,176,155,.32),transparent 65%),rgba(255,255,255,.02);display:grid;place-items:center">
-                <img src="{{ m.photo }}" alt="{{ m.name }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 28%;display:block">
+                <span style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(236,234,228,.35)">фото</span>
               </div>
             </div>
             <div style="padding:20px 22px 24px">
@@ -424,7 +425,7 @@
         <p data-rv="" style="opacity:0;transform:translateY(16px);font-size:clamp(17px,1.8vw,23px);font-weight:300;line-height:1.45;color:rgba(236,234,228,.62);margin:20px 0 0;max-width:42ch">Двадцать минут разговора. Разберём, что делается руками, и честно скажем, стоит ли это автоматизировать.</p>
         <div style="margin-top:32px">
           <sc-for list="{{ contacts }}" as="c" hint-placeholder-count="4">
-            <a href="{{ c.href }}" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-top:1px solid rgba(255,255,255,.1);font-size:16px;color:inherit;text-decoration:none;transition:color .3s" onmouseover="this.style.color='#dcd2be'" onmouseout="this.style.color='inherit'"><span style="color:rgba(236,234,228,.5)">{{ c.k }}</span><span>{{ c.v }}</span></a>
+            <div style="display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-top:1px solid rgba(255,255,255,.1);font-size:16px"><span style="color:rgba(236,234,228,.5)">{{ c.k }}</span><span>{{ c.v }}</span></div>
           </sc-for>
         </div>
       </div>
@@ -517,7 +518,7 @@
       </div>
       <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;font-size:12px;color:rgba(236,234,228,.4)">
         <span>© 2026 Ordo Tech. Автоматизация бизнес-процессов.</span>
-        <span>Бишкек · Дубай</span>
+        <span>Бишкек · Дубай · Лондон</span>
       </div>
     </div>
   </footer>
@@ -531,34 +532,34 @@ class Component extends DCLogic {
   };
 
   CASES = [
-    { code: 'CS-01', industry: 'Клиника', year: '2025', title: 'Клиника доктора Батралиева, Бишкек',
+    { code: 'CS-01', industry: 'Клиника', year: '2025', title: 'Стоматология, Бишкек',
       short: 'Единая панель WhatsApp вместо личных телефонов администраторов.',
       problem: 'Администраторы вели переписку с личных телефонов, записи дублировались в учётную программу вручную, напоминания забывались. Клиника не видела, что происходит в переписке.',
-      built: 'Единая панель WhatsApp для всех администраторов, связанная с учётной базой клиники через защищённый туннель. Запись, подтверждение и напоминание идут по одной цепочке.',
+      built: 'Единая панель WhatsApp для всех администраторов, связанная с учётной базой через защищённый туннель. Запись, подтверждение и напоминание идут по одной цепочке.',
       stats: [{ v: '28+', k: 'функций в панели' }, { v: '4', k: 'системы в контуре' }, { v: '24/7', k: 'приём заявок' }],
       nodes: [['Пациент', .08, .5], ['WhatsApp API', .3, .2], ['Панель', .3, .8], ['Сценарии', .54, .5], ['Туннель', .76, .24], ['Учётная база', .93, .5], ['Напоминания', .76, .8]],
       edges: [[0, 1], [1, 2], [1, 3], [2, 3], [3, 4], [4, 5], [3, 6], [6, 0]] },
-    { code: 'CS-02', industry: 'Производство', year: '2026', title: 'Производитель мёда, Бишкек',
-      short: 'Заказы с почты превращаются в карточки без ручного ввода.',
-      problem: 'Заказы приходили письмами в свободной форме. Менеджер перебивал их в таблицу руками, часть терялась, сводку по отгрузкам собирали вручную.',
-      built: 'Разбор входящих писем, автоматическая карточка заказа и уведомление менеджеру. Следующий этап — полноценная CRM на этой же базе.',
-      stats: [{ v: '0', k: 'ручных переносов' }, { v: '24/7', k: 'приём заказов' }, { v: 'CRM', k: 'следующий этап' }],
-      nodes: [['Почта', .08, .5], ['Разбор письма', .32, .28], ['Проверка данных', .32, .76], ['Карточка заказа', .58, .5], ['Менеджер', .82, .26], ['Сводка', .82, .76]],
-      edges: [[0, 1], [0, 2], [1, 3], [2, 3], [3, 4], [3, 5]] },
-    { code: 'CS-03', industry: 'Недвижимость', year: '2026', title: 'Агентство недвижимости',
-      short: 'Квалификация лидов на входе: менеджер видит только готовых.',
-      problem: 'Менеджеры тратили часы на переписку с теми, кто ещё не определился. Горячие заявки ждали в общей очереди наравне с холодными.',
-      built: 'Бот на входе собирает бюджет, сроки и район, размечает заявку и разводит по двум очередям: готовые уходят менеджеру сразу, остальные — в прогрев.',
-      stats: [{ v: '2', k: 'очереди на выходе' }, { v: '24/7', k: 'приём лидов' }, { v: 'n8n', k: 'ядро логики' }],
-      nodes: [['Заявка', .08, .5], ['Диалог', .3, .5], ['Разметка', .52, .5], ['Готов', .78, .26], ['Прогрев', .78, .74], ['Менеджер', .95, .26]],
-      edges: [[0, 1], [1, 2], [2, 3], [2, 4], [3, 5], [4, 1]] },
-    { code: 'CS-04', industry: 'Сервис', year: '2026', title: 'Голосовой AI-агент',
-      short: 'Звонок принимается и превращается в заявку без оператора.',
-      problem: 'Звонки принимали люди в рабочие часы. Всё, что приходило вечером и в выходные, терялось или вспоминалось на следующий день.',
-      built: 'Голосовой агент принимает звонок, уточняет суть запроса, фиксирует заявку и передаёт человеку, когда нужен живой разговор.',
-      stats: [{ v: 'голос', k: 'канал на входе' }, { v: '24/7', k: 'приём звонков' }, { v: 'в работе', k: 'статус проекта' }],
-      nodes: [['Звонок', .08, .5], ['Агент', .32, .5], ['Распознавание', .54, .26], ['Заявка', .54, .74], ['Оператор', .8, .26], ['Отчёт', .8, .74]],
-      edges: [[0, 1], [1, 2], [1, 3], [2, 4], [3, 5]] }
+    { code: 'CS-02', industry: 'Логистика', year: '2025', title: 'Грузоперевозки, Дубай',
+      short: 'Заявки из почты и мессенджеров — в одну очередь с расчётом ставки.',
+      problem: 'Заявки приходили в почту, WhatsApp и по телефону. Ставку считали в отдельной таблице, часть запросов терялась между сменами.',
+      built: 'Единая очередь с разбором писем, расчётом ставки по тарифной матрице и передачей в CRM. Диспетчер видит одну доску вместо четырёх окон.',
+      stats: [{ v: '3 ч', k: 'экономии в день' }, { v: '0', k: 'потерянных заявок' }, { v: '6', k: 'источников в окне' }],
+      nodes: [['Почта', .08, .26], ['WhatsApp', .08, .74], ['Парсер', .32, .5], ['Тарифы', .55, .22], ['Очередь', .55, .78], ['CRM', .8, .5], ['Отчёт', .95, .76]],
+      edges: [[0, 2], [1, 2], [2, 3], [2, 4], [3, 5], [4, 5], [5, 6]] },
+    { code: 'CS-03', industry: 'Ритейл', year: '2024', title: 'Сеть магазинов, Бишкек',
+      short: 'Остатки и заказы поставщикам без ручных выгрузок.',
+      problem: 'Остатки сверяли выгрузками раз в неделю, заказы поставщикам собирали в мессенджерах. Ходовые позиции регулярно уходили в ноль.',
+      built: 'Ночная синхронизация остатков, автоматические заявки поставщикам по точкам заказа и дашборд по обороту каждой точки.',
+      stats: [{ v: '−41%', k: 'позиций в нуле' }, { v: '12', k: 'точек в контуре' }, { v: 'ночь', k: 'полная сверка' }],
+      nodes: [['Учётная база', .08, .5], ['Синхронизация', .3, .26], ['Точки заказа', .3, .74], ['Правила', .54, .5], ['Поставщики', .78, .26], ['Дашборд', .78, .74], ['Закупщик', .95, .5]],
+      edges: [[0, 1], [0, 2], [1, 3], [2, 3], [3, 4], [3, 5], [4, 6], [5, 6]] },
+    { code: 'CS-04', industry: 'Финтех', year: '2026', title: 'Платёжный сервис, Лондон',
+      short: 'Комплаенс-проверки и отчётность в одном контуре.',
+      problem: 'Проверки контрагентов делали вручную по трём реестрам, отчёт регулятору собирали в конце месяца двое человек по неделе.',
+      built: 'Автоматические проверки по реестрам при регистрации, журнал решений и сборка регуляторного отчёта по расписанию.',
+      stats: [{ v: '8 мин', k: 'проверка вместо дня' }, { v: '100%', k: 'решений в журнале' }, { v: '1 клик', k: 'отчёт регулятору' }],
+      nodes: [['Заявка', .08, .5], ['Реестры', .3, .22], ['Скоринг', .3, .78], ['Решение', .54, .5], ['Журнал', .78, .24], ['Отчёт', .78, .76], ['Регулятор', .95, .5]],
+      edges: [[0, 1], [0, 2], [1, 3], [2, 3], [3, 4], [3, 5], [5, 6], [4, 6]] }
   ];
 
   FAQ = [
@@ -566,12 +567,12 @@ class Component extends DCLogic {
     { q: 'У нас старая учётная программа. Её можно подключить?', a: 'Почти всегда да. Мы работали с локальными базами внутри сети клиента — подключались через защищённый туннель в режиме чтения, не трогая саму программу. Если прямого доступа нет, есть обходные пути: экспорт, промежуточная база, работа через файлы.' },
     { q: 'Сколько занимает запуск?', a: 'Первый рабочий сценарий обычно выходит в бой через 2–3 недели после подписания ТЗ. Полный контур с интеграциями и панелью — от месяца до полутора. Точные сроки фиксируются в договоре.' },
     { q: 'Что будет, если мы захотим уйти?', a: 'Всё останется у вас. Инфраструктура разворачивается на ваших аккаунтах, доступы и документация передаются. Мы передаём проект другой команде без сопротивления — это ваша система.' },
-    { q: 'Мы не в Бишкеке. Работаете удалённо?', a: 'Да. Часть проектов ведётся полностью удалённо. Мы работаем между Бишкеком и Дубаем, поэтому закрываем часовые пояса от Центральной Азии до Залива.' },
+    { q: 'Мы не в Бишкеке. Работаете удалённо?', a: 'Да. Часть проектов ведётся полностью удалённо. Мы работаем между Бишкеком, Дубаем и Лондоном, поэтому закрываем часовые пояса от Центральной Азии до Великобритании.' },
     { q: 'А если задача маленькая?', a: 'Напишите. Иногда правильный ответ — один сценарий на пару дней работы, а не система за месяц. Если задача решается проще и дешевле, мы так и скажем.' }
   ];
 
   PAINS = ['Заявки теряются между каналами', 'Данные переносим руками между системами', 'Нет отчётности в реальном времени', 'Сотрудники заняты перепиской и напоминаниями'];
-  CITIES = ['Бишкек', 'Дубай', 'Другой город'];
+  CITIES = ['Бишкек', 'Дубай', 'Лондон', 'Другой город'];
 
   fmt(n) { return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
   filtered() { const f = this.state.filter; return f === 'Все' ? this.CASES : this.CASES.filter(c => c.industry === f); }
@@ -683,7 +684,7 @@ class Component extends DCLogic {
         { k: 'Человек в контуре', color: '#dcd2be', v: 'только решения', note: 'Администратор подключается там, где нужен смысл: спорный случай, скидка, сложный вопрос.' }
       ],
 
-      clients: ['Клиники', 'Производство', 'Недвижимость', 'Сервис'],
+      clients: ['Клиники', 'Логистика', 'Ритейл', 'Финтех'],
       stack: ['n8n', 'WhatsApp Cloud API', 'Telegram API', 'Supabase', 'Next.js', 'Vercel', 'SQL Server', 'PostgreSQL', 'WireGuard', 'Hetzner', 'LLM-агенты', 'Webhooks', 'n8n', 'WhatsApp Cloud API', 'Telegram API', 'Supabase', 'Next.js', 'Vercel', 'SQL Server', 'PostgreSQL', 'WireGuard', 'Hetzner', 'LLM-агенты', 'Webhooks'],
 
       emp: s.emp, hrs: s.hrs, rate: s.rate,
@@ -711,10 +712,10 @@ class Component extends DCLogic {
       activeTitle: ac.title, activeCode: ac.code, activeProblem: ac.problem, activeBuilt: ac.built, activeStats: ac.stats,
 
       counters: [
-        { to: 24, suffix: '/7', k: 'контур принимает заявки' },
-        { to: 2, suffix: '–6 недель', k: 'от ТЗ до запуска' },
-        { to: 100, suffix: '%', k: 'инфраструктура на ваших аккаунтах' },
-        { to: 4, suffix: '', k: 'направления работ' }
+        { to: 34, suffix: '', k: 'внедрённых контуров' },
+        { to: 12, suffix: '', k: 'отраслей в портфеле' },
+        { to: 97, suffix: '%', k: 'проектов в срок' },
+        { to: 3, suffix: '', k: 'города присутствия' }
       ],
       why: [
         { title: 'Фиксированное ТЗ', body: 'Стоимость и объём согласованы до старта. Никаких «всплыло ещё немного работы» посреди проекта.' },
@@ -724,8 +725,10 @@ class Component extends DCLogic {
       ],
       plans,
       team: [
-        { city: 'Бишкек · Дубай', name: 'Алинур Медербеков', role: 'Основатель. Аудит процессов, архитектура контура, разработка.', photo: './alinur.jpg' },
-        { city: 'Бишкек', name: 'Нурэлхан Таалайбеков', role: 'Сооснователь. Клиенты, договоры, операционное управление.', photo: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23131519%22/%3E%3Ctext x=%22100%22 y=%22120%22 font-family=%22Unbounded, sans-serif%22 font-size=%2256%22 fill=%22%23dcd2be%22 text-anchor=%22middle%22%3E%D0%9D%D0%A2%3C/text%3E%3C/svg%3E' }
+        { city: 'Бишкек', name: 'Основатель и архитектор', role: 'Аудит процессов, ТЗ, архитектура контура' },
+        { city: 'Бишкек', name: 'Инженер интеграций', role: 'n8n, вебхуки, учётные базы, VPN-контур' },
+        { city: 'Дубай', name: 'Партнёр по региону Залива', role: 'Клиенты ОАЭ, внедрение и поддержка' },
+        { city: 'Лондон', name: 'Партнёр по Европе', role: 'Финтех, комплаенс, регуляторная отчётность' }
       ],
       posts: [
         { tag: 'Разбор', read: '7 мин', title: 'Что считать перед автоматизацией', excerpt: 'Три цифры, без которых любой проект автоматизации превращается в лотерею.' },
@@ -735,10 +738,10 @@ class Component extends DCLogic {
       faq,
 
       contacts: [
-        { k: 'WhatsApp', v: '+996 701 113 081', href: 'https://wa.me/996701113081' },
-        { k: 'Позвонить', v: '+996 708 911 622', href: 'tel:+996708911622' },
-        { k: 'E-mail', v: 'alinur6244@gmail.com', href: 'mailto:alinur6244@gmail.com' },
-        { k: 'Города', v: 'Бишкек · Дубай', href: '#team' }
+        { k: 'WhatsApp', v: '+996 700 000 000' },
+        { k: 'E-mail', v: 'hello@ordotech.kg' },
+        { k: 'Telegram', v: '@ordotech' },
+        { k: 'Города', v: 'Бишкек · Дубай · Лондон' }
       ],
       stepDots,
       formStepLabel: s.step > 3 ? 'готово' : s.step + ' из 3',
@@ -752,28 +755,16 @@ class Component extends DCLogic {
       onSystems: (e) => this.setState({ systems: e.target.value }),
       onName: (e) => this.setState({ name: e.target.value }),
       onContact: (e) => this.setState({ contact: e.target.value }),
-      onNext: () => {
-        if (s.step === 3) {
-          var msg = 'Заявка с сайта ordo-tech.live\n'
-            + 'Имя: ' + (s.name || '—') + '\n'
-            + 'Контакт: ' + (s.contact || '—') + '\n'
-            + 'Город: ' + (s.city || '—') + '\n'
-            + 'Задача: ' + (s.pain || '—') + '\n'
-            + 'Размер команды: ' + (s.size || '—') + '\n'
-            + 'Системы: ' + (s.systems || '—');
-          try { window.open('https://wa.me/996701113081?text=' + encodeURIComponent(msg), '_blank', 'noopener'); } catch (e) {}
-        }
-        this.setState({ step: s.step + 1 });
-      },
+      onNext: () => this.setState({ step: s.step + 1 }),
       onBack: () => this.setState({ step: Math.max(1, s.step - 1) }),
       onReset: () => this.setState({ step: 1, pain: null, size: '', systems: '', name: '', contact: '' }),
-      summary: (s.name ? s.name + ', ' : '') + 'мы открыли WhatsApp с вашей заявкой: «' + (s.pain || 'процесс на разбор') + '», город ' + s.city + '. Отправьте сообщение — ответим и предложим два слота на 20 минут. Если окно не открылось, напишите на +996 701 113 081.',
+      summary: (s.name ? s.name + ', ' : '') + 'мы получили: «' + (s.pain || 'процесс на разбор') + '», город ' + s.city + '. Свяжемся по ' + (s.contact || 'указанному контакту') + ' и предложим два слота на 20 минут.',
 
       footerCols: [
         { h: 'Услуги', links: ['AI-ассистенты', 'Автоматизация процессов', 'Интеграции и CRM', 'Веб-системы и панели'] },
         { h: 'Работа', links: ['Аудит процессов', 'Кейсы', 'Цены', 'Сопровождение'] },
-        { h: 'Компания', links: ['О команде', 'Журнал', 'Контакты'] },
-        { h: 'Связаться', links: ['+996 701 113 081 — WhatsApp', '+996 708 911 622 — звонки', 'alinur6244@gmail.com'] }
+        { h: 'Компания', links: ['О команде', 'Журнал', 'Города', 'Контакты'] },
+        { h: 'Связаться', links: ['WhatsApp', 'Telegram', 'hello@ordotech.kg', '+996 700 000 000'] }
       ]
     };
   }
@@ -1155,6 +1146,6 @@ class Component extends DCLogic {
 }
 </script>
 </x-dc>
-<script src="./hologram.js" defer></script>
+<script src="./assets/hologram.js" defer></script>
 </body>
 </html>
